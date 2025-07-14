@@ -1,3 +1,4 @@
+//How to check upercase , lowercase and numeric value1
 #include<iostream>
 using namespace std;
 int main(){
