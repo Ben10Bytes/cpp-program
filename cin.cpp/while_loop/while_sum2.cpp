@@ -1,4 +1,4 @@
-// The sum of 1 to n number
+// The sum of 1 to n numbers using a while loop
 
 #include<iostream>
 using namespace std;
