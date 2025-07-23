@@ -1,3 +1,6 @@
+// This file is part of a C++ program that converts Fahrenheit to Celsius
+// using a while loop.
+
 #include<iostream>
 using namespace std;
 int main(){
