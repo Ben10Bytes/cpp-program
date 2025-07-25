@@ -11,7 +11,7 @@ int main(){
     while(i<n){
         if(n % i ==0){
             cout << "Not Prime" << endl;
-            return 0;
+            return 0; // Exit the program if not prime  
 
         }
         i++; // i = i + 1;
