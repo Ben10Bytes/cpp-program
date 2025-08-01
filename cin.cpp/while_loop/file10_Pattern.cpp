@@ -1,4 +1,4 @@
-// create a equal number of rows and columns with same number using while loop
+// Pattern printing for equal row and column but each row contains the row number
 
 #include<iostream>
 using namespace std;

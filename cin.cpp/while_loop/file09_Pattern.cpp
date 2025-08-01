@@ -10,10 +10,10 @@ int main(){
         int j =1;
 
         while(j<=n){
-            cout<<"*";
-            j = j+1;
+            cout<<"*" <<" ";
+            j++;
         }
-        i = i+1;
+        i++;
         cout<<endl;
         
     }
