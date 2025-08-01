@@ -13,7 +13,7 @@ int main(){
         int isPrime = 1; // Assume num is prime
 
         while(i< num){
-            if(num % i == 0){
+            if(n % i == 0){
                 isPrime = 0; // num is not prime
             }
             i++;
