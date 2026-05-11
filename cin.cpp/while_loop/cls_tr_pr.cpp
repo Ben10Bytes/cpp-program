@@ -61,18 +61,36 @@
 // }
 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int arr[] = {10,20,30,40};
+//     int max = arr[0];
+
+//     for (int i = 0; i < 4; i++){
+//         if(arr[i] > max);
+//         max = arr[i];
+//     }
+
+//     cout<<"maximum number is : " << max;
+//     return 0;
+
+// }
+
+
+
+
+
+
 #include<iostream>
 using namespace std;
 int main(){
-    int arr[] = {10,20,30,40};
-    int max = arr[0];
+    int arr[4] = {10,20,30,40};
+    arr[1]=100;
 
-    for (int i = 0; i < 4; i++){
-        if(arr[i] > max);
-        max = arr[i];
+    for(int i=0; i<4; i++){
+        cout<<arr[i]<<" ";
     }
-
-    cout<<"maximum number is :  " << max;
     return 0;
 
 }
