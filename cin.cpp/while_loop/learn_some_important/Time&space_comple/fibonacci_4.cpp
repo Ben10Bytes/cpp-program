@@ -1,4 +1,5 @@
 #include<iostream>
+#include<ctime>
 using namespace std;
 int main(){
 
@@ -7,6 +8,8 @@ int main(){
     int b = 1;
     int c;
 
+    clock_t start = clock();
+
     cout << a << " " << b << " ";
     
     for(int i = 3; i <=n; i++){
@@ -14,7 +17,11 @@ int main(){
         cout << c << " ";
         a = b;
         b = c;
-
     }
+
+    clock_t end = clock();
+    double time_taken = double(end - start) / CLOCKS_PER_SEC;
+    cout << endl;
+    cout << "Time Taken = " << time_taken << " seconds";
     return 0;
 }
