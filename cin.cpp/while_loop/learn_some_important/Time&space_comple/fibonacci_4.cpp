@@ -9,8 +9,6 @@ int main(){
     int c;
 
     clock_t start = clock();
-
-    cout << a << " " << b << " ";
     
     for(int i = 3; i <=n; i++){
         c = a + b;
