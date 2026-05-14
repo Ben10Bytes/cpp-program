@@ -8,16 +8,23 @@ int main(){
     };
 
     int sum = 0;
+    int single[9];
+    int k = 0;
     cout<<"Matrix:"<< endl;
 
+    
 
-    // Print Matrix and Calculate Sum
+
+
+    // Print Matrix and Calculate Sum, Store in Single Array
 
     for(int i = 0; i < 3; i++){
         for(int j =0; j < 3; j++){
             cout << arr[i][j] << " ";
 
             sum = sum + arr[i][j];
+            single[k] = arr[i][j];
+            k++;
         }
         cout << endl;
     
@@ -28,13 +35,27 @@ int main(){
 
     cout << "Single Array: {";
 
-    for(int i = 0; i < 3; i++){
-        for(int j = 0; j < 3; j++){
-            cout << arr[i][j];
+    for(int i = 0; i < 9; i++){
+        cout << single[i];
+        if(i != 8){
+            cout<< ",";
+        }
+    }
 
-            if(!(i == 2 && j == 2)){
-                cout<< ",";
-            }
+    cout << "}";
+
+    cout << endl << endl;
+
+
+    // Reverse Single Array
+
+    cout << "Reverse Array; {";
+    
+    for(int i = 8; i>=0; i--){
+        cout << single[i];
+        if(i != 0){
+            cout<< ",";
+
         }
     }
 
