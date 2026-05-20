@@ -1,3 +1,11 @@
+/*Substring is used when we want to:
+
+extract specific text
+split data
+check words
+parse strings
+work with usernames/emails/files*/
+
 #include<iostream>
 using namespace std;
 int main(){
