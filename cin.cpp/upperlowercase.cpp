@@ -18,4 +18,6 @@ int main(){
         cout<<"The input is numeric value"<<endl;
     }
 
+    return 0;
+
 }
