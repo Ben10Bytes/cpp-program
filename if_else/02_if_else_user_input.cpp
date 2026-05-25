@@ -1,13 +1,13 @@
 #include<iostream>
 using namespace std;
 int main(){
-
     int x;
+    cout<<"Enter your age : ";
     cin>>x;
-    if( x >= 18) {
+
+    if(x >= 18){
         cout << "Eligible";
     } else {
         cout << "Not Eligible";
     }
 }
-
