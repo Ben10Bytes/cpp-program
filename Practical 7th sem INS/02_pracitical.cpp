@@ -1,5 +1,8 @@
-// Practical 2  
-// AIM: - Implement Monoalphabetic cipher encryption
+
+
+//       <<     PRACTICAL 2     >> 
+
+// AIM : - Implement Monoalphabetic cipher encryption
 
 
 #include <iostream>
