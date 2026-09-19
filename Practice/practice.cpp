@@ -191,12 +191,14 @@ int main(){
     int i = 1;
     while(i <= n){
         int j = 1;
-        char ch = 'A' + i - 1;
+        char ch = 'A' + i -1;
         while(j <= n){
-            cout <<ch << "  ";
+            cout<<ch<<"  ";
             j = j + 1;
+
+
         }
-        cout <<endl;
+        cout<<endl;
         i = i + 1;
     }
     return 0;
