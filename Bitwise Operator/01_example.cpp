@@ -22,5 +22,24 @@ int main(){
     cout << (5 << 2) << endl;
     cout << (20 >> 2) << endl;
     cout << (20 >> 3) << endl;
+
+
+    // Post- increment , Pre - increment , Post- decrement and Pre - decrement ;
+
+    int i = 7;
+
+    cout << (i++) << endl; 
+    // 7 , i = 8;
+
+    cout << (++i) << endl;
+    // i = 9;
+
+    cout << (i--) << endl;
+    // 9 , i = 8;
+
+    cout << (--i) << endl;
+    // 7 
+
+
     
 }
