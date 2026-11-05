@@ -38,7 +38,13 @@ int main(){
     // 9 , i = 8;
 
     cout << (--i) << endl;
-    // 7 
+    // 7 , i = 7;
+
+
+    int k = 10;
+    cout << k++ << endl;
+    cout << ++k << endl;
+    cout << k;
 
 
     
