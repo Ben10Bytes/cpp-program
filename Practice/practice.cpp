@@ -567,23 +567,34 @@
 //     cout <<"Sum of even no is: " <<sum<<endl;
 // }
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout <<"Enter the number: ";
+//     cin >> n;
+    
+
+//     int i = 2;
+//     while(i<=n){
+//         cout <<i<<" ";
+//         i+=2;
+//     }
+// }
+
+
 #include<iostream>
 using namespace std;
 int main(){
     int n;
-    cout <<"Enter the number: ";
+    cout<<"Enter the no. : ";
     cin >> n;
-    
 
-    int i = 2;
-    int sum = 0;
+    int i = 1;
     while(i<=n){
-        cout <<i<<" ";
-        sum = sum + i;
-        i+=2;
+        cout << i<<" ";
+        i++;
     }
-    cout<<endl;
-    cout <<"Sum of even no is : "<<sum<<endl;
 }
 
 
