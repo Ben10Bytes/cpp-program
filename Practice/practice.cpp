@@ -479,19 +479,34 @@
 
 // Fibonacci 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout <<"Enter the number of terms : ";
+//     cin >> n;
+
+//     int a = 0, b = 1, next;
+//     for(int i = 1; i<=n; i++){
+//         cout << a << " " << endl;
+//         next = a + b;
+//         a = b;
+//         b = next;
+//     }
+// }
+
+
 #include<iostream>
 using namespace std;
 int main(){
     int n;
-    cout <<"Enter the number of terms : ";
+    cout <<"Enter the no.: ";
     cin >> n;
 
-    int a = 0, b = 1, next;
     for(int i = 1; i<=n; i++){
-        cout << a << " " << endl;
-        next = a + b;
-        a = b;
-        b = next;
+        if(i%2!=0){
+            cout <<i<<" ";
+        }
     }
 }
 
