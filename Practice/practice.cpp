@@ -597,25 +597,43 @@
 //     }
 // }
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout <<"Enter the no. : ";
+//     cin >> n;
+
+//     int i = 1;
+//     int sum = 0;
+
+//     while(i<=n){
+//         cout <<i<<" ";
+//         sum = sum + i;
+//         i++;
+//     }
+//     cout << endl;
+//     cout << "Sum of natural no. : "<<sum;
+// }
+
+
 #include<iostream>
 using namespace std;
 int main(){
     int n;
     cout <<"Enter the no. : ";
-    cin >> n;
+    cin>>n;
 
-    int i = 1;
     int sum = 0;
 
-    while(i<=n){
-        cout <<i<<" ";
+    for(int i = 1; i<=n; i++){
+        cout<<i<<" ";
         sum = sum + i;
-        i++;
+
     }
     cout << endl;
-    cout << "Sum of natural no. : "<<sum;
+    cout <<"sum of natural no. : "<< sum;
 }
-
 
 
 
