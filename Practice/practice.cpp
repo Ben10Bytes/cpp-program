@@ -636,16 +636,35 @@
 // }
 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout << "Enter the no. : ";
+//     cin >> n;
+
+//     for(int i = 2; i<=n; i+=2){
+//         cout << i <<" ";
+//     }
+// }
+
+
+
 #include<iostream>
 using namespace std;
 int main(){
     int n;
-    cout << "Enter the no. : ";
+    cout << "Ener the no. : ";
     cin >> n;
 
+    int sum = 0;
+
     for(int i = 2; i<=n; i+=2){
-        cout << i <<" ";
+        cout <<i<<" ";
+        sum = sum + i;
     }
+    cout << endl;
+    cout << "Sum of even no. is : "<<sum;
 }
 
 
