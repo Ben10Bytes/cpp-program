@@ -496,6 +496,22 @@
 // }
 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout <<"Enter the no.: ";
+//     cin >> n;
+
+//     for(int i = 1; i<=n; i++){
+//         if(i%2!=0){
+//             cout <<i<<" ";
+//         }
+//     }
+// }
+
+
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -503,10 +519,12 @@ int main(){
     cout <<"Enter the no.: ";
     cin >> n;
 
-    for(int i = 1; i<=n; i++){
-        if(i%2!=0){
-            cout <<i<<" ";
-        }
+
+    if(n%2!=0){
+        cout <<"Odd no";
+    }
+    else{
+        cout <<"Even no";
     }
 }
 
