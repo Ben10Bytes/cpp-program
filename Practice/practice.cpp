@@ -650,21 +650,35 @@
 
 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout << "Ener the no. : ";
+//     cin >> n;
+
+//     int sum = 0;
+
+//     for(int i = 2; i<=n; i+=2){
+//         cout <<i<<" ";
+//         sum = sum + i;
+//     }
+//     cout << endl;
+//     cout << "Sum of even no. is : "<<sum;
+// }
+
+
 #include<iostream>
 using namespace std;
 int main(){
     int n;
-    cout << "Ener the no. : ";
+    cout << "Enter the no. : ";
     cin >> n;
 
-    int sum = 0;
-
-    for(int i = 2; i<=n; i+=2){
-        cout <<i<<" ";
-        sum = sum + i;
+    
+    for(int i = 1; i<=n; i+=2){
+        cout<<i<<" ";
     }
-    cout << endl;
-    cout << "Sum of even no. is : "<<sum;
 }
 
 
