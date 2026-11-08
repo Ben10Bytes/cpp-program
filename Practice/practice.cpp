@@ -681,28 +681,49 @@
 //     }
 // }
 
-#include<iostream>
-using namespace std;
-int main(){
-    int n;
-    cout << "Enter the number : ";
-    cin >> n;
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout << "Enter the number : ";
+//     cin >> n;
 
-    int i;
+//     int i;
+    
 
-    for(i=2; i<n; i++){
-        if(n%i==0){
-            break;
-        }
-    }
-    if(i == n){
-        cout <<"Prime";
+//     for(i=2; i<n; i++){
+//         if(n%i==0){
+//             break;
+//         }
+//     }
+//     if(i == n){
+//         cout <<"Prime";
 
-    }
-    else{
-        cout <<"Not Prime";
-    }
-}
+//     }
+//     else{
+//         cout <<"Not Prime";
+//     }
+// }
+
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+
+//     int n;
+//     cout<<"Enter the no. of terms: ";
+//     cin >> n;
+    
+//     int a = 0, b = 1, next;
+    
+//     for(int i = 1; i<=n; i++){
+//         cout <<a<<" ";
+//         next = a + b;
+//         a = b;
+//         b = next;
+//     }
+// }
 
 
 
