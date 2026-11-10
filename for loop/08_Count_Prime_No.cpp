@@ -6,6 +6,7 @@ int main(){
     cin>>n;
     
     int count = 0;
+    int sum = 0;
     for(int i = 2; i<=n; i++){
         
         int j;
@@ -18,8 +19,10 @@ int main(){
         if(j==i){
             cout<<j<<" ";
             count = count + 1;
+            sum = sum + j;
         }
     }
     cout<<endl;
     cout <<"count = "<<count;
+    cout <<"\nSum of prime number is "<<sum;
 }
