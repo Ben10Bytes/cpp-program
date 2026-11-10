@@ -726,15 +726,38 @@
 // }
 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n; 
+//     cout << "Enter the user input: ";
+//     cin >> n;
+
+//     int i;
+    
+//     for(i = 2; i<n; i++){
+//         if(n%i==0){
+//             break;
+//         }
+//     }
+//     if(i == n){
+//         cout <<"Prime no.";
+//     }
+//     else{
+//         cout << "Not Prime";
+//     }
+// }
+
+
 #include<iostream>
 using namespace std;
 int main(){
-    int n; 
-    cout << "Enter the user input: ";
+    int n;
+    cout<<"Enter the input : ";
     cin >> n;
 
     int i;
-    
+
     for(i = 2; i<n; i++){
         if(n%i==0){
             break;
@@ -744,10 +767,10 @@ int main(){
         cout <<"Prime no.";
     }
     else{
-        cout << "Not Prime";
+        cout <<"Not Prime";
     }
-}
 
+}
 
 
 
