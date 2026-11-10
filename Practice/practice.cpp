@@ -749,27 +749,76 @@
 // }
 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter the input : ";
+//     cin >> n;
+
+//     int i;
+
+//     for(i = 2; i<n; i++){
+//         if(n%i==0){
+//             break;
+//         }
+//     }
+//     if(i == n){
+//         cout <<"Prime no.";
+//     }
+//     else{
+//         cout <<"Not Prime";
+//     }
+
+// }
+
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout <<"Enter the input: ";
+//     cin >> n;
+
+//     int i;
+
+//     for(i = 2; i<n; i++){
+//         if(n%i==0){
+//             break;
+//         }
+//     }
+//     if(i==n){
+//         cout <<"Prime number";
+//     }
+//     else{
+//         cout<<"Not Prime";
+//     }
+// }
+
 #include<iostream>
 using namespace std;
 int main(){
     int n;
-    cout<<"Enter the input : ";
-    cin >> n;
+    cout <<"Enter the input: ";
+    cin >>n;
 
-    int i;
+    int count = 0;
 
-    for(i = 2; i<n; i++){
-        if(n%i==0){
-            break;
+    for(int i=2; i<=n; i++){
+
+        int j;
+        for(j=2; j<i; j++){
+            if(i%j==0){
+                break;
+            }
+        }
+        if(j==i){
+            cout<<j<<" ";
+            count = count + 1;
         }
     }
-    if(i == n){
-        cout <<"Prime no.";
-    }
-    else{
-        cout <<"Not Prime";
-    }
-
+    cout<<endl;
+    cout <<"Prime number count is "<<count;
 }
 
 
