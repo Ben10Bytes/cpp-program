@@ -863,33 +863,47 @@
 //     }
 // }
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout <<"Enter the input : ";
+//     cin >> n;
+
+//     int count = 0;
+//     int sum = 0;
+
+//     for(int i = 2; i <=n; i++){
+
+//         int j;
+//         for(j = 2; j < i; j++){
+//             if(i%j==0){
+//                 break;
+//             }
+//         }
+//         if(j==i){
+//             cout<<j<<" ";
+//             count = count + 1;
+//             sum = sum + j;
+//         }
+//     }
+//     cout<<endl;
+//     cout<<"Count : "<<count<<endl;
+//     cout<<"sum is : "<<sum;
+// }
+
+
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
-    cout <<"Enter the input : ";
-    cin >> n;
-
-    int count = 0;
-    int sum = 0;
-
-    for(int i = 2; i <=n; i++){
-
-        int j;
-        for(j = 2; j < i; j++){
-            if(i%j==0){
+    for(int i = 0; i<5; i++){
+        for(int j = i; j<=5; j++){
+            if(i+j==10){
                 break;
             }
-        }
-        if(j==i){
-            cout<<j<<" ";
-            count = count + 1;
-            sum = sum + j;
+            cout<<i<<" "<<j<<endl;
         }
     }
-    cout<<endl;
-    cout<<"Count : "<<count<<endl;
-    cout<<"sum is : "<<sum;
 }
 
 
