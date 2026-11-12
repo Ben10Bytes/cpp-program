@@ -795,30 +795,51 @@
 //     }
 // }
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout <<"Enter the input: ";
+//     cin >>n;
+
+//     int count = 0;
+
+//     for(int i=2; i<=n; i++){
+
+//         int j;
+//         for(j=2; j<i; j++){
+//             if(i%j==0){
+//                 break;
+//             }
+//         }
+//         if(j==i){
+//             cout<<j<<" ";
+//             count = count + 1;
+//         }
+//     }
+//     cout<<endl;
+//     cout <<"Prime number count is "<<count;
+// }
+
+
+
 #include<iostream>
 using namespace std;
 int main(){
     int n;
-    cout <<"Enter the input: ";
-    cin >>n;
+    cout <<"Enter the input : ";
+    cin >> n;
 
-    int count = 0;
+    int a = 0;
+    int b = 1;
+    int next;
 
-    for(int i=2; i<=n; i++){
-
-        int j;
-        for(j=2; j<i; j++){
-            if(i%j==0){
-                break;
-            }
-        }
-        if(j==i){
-            cout<<j<<" ";
-            count = count + 1;
-        }
+    for(int i=1; i<=n; i++){
+        cout<<a<<" ";
+        next = a + b;
+        a = b;
+        b = next;
     }
-    cout<<endl;
-    cout <<"Prime number count is "<<count;
 }
 
 
