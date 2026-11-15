@@ -925,17 +925,39 @@
 
 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout << "Enter the Input : ";
+//     cin >> n;
+
+//     int binary = 0;
+//     int place = 1;
+
+//     for()
+// }
+
+
 #include<iostream>
 using namespace std;
 int main(){
     int n;
-    cout << "Enter the Input : ";
-    cin >> n;
+    cout<<"Enter the input : ";
+    cin>>n;
 
-    int binary = 0;
+    int decimal = 0;
     int place = 1;
 
-    for()
+    while(n!=0){
+
+        int rem = n % 10;
+        decimal = rem * place + decimal;
+        place = place * 2;
+        n = n / 10;
+    }
+    cout<<decimal;
+
 }
 
 
