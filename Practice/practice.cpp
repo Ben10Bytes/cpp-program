@@ -893,17 +893,34 @@
 // }
 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     for(int i = 0; i<5; i++){
+//         for(int j = i; j<=5; j++){
+//             if(i+j==10){
+//                 break;
+//             }
+//             cout<<i<<" "<<j<<endl;
+//         }
+//     }
+// }
+
+
 #include<iostream>
 using namespace std;
 int main(){
-    for(int i = 0; i<5; i++){
-        for(int j = i; j<=5; j++){
-            if(i+j==10){
-                break;
-            }
-            cout<<i<<" "<<j<<endl;
-        }
+    int n = 13;
+    int binary = 0;
+    int place = 1;
+
+    while(n!=0){
+        int rem = n & 1;
+        binary = rem * place + binary;
+        n = n >> 1;
+        place = place * 10;
     }
+    cout <<"Bianry : " << binary;
 }
 
 
