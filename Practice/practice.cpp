@@ -961,24 +961,45 @@
 // }
 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter the input: ";
+//     cin>>n;
+
+//     int binary = 0;
+//     int place = 1;
+
+//     while(n!=0){
+//         int rem = n&1;
+//         binary = rem * place + binary;
+//         place = place * 10;
+//         n = n >> 1;
+
+//     }
+//     cout <<binary;
+// }
+
+
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
-    cout<<"Enter the input: ";
-    cin>>n;
 
-    int binary = 0;
+    int n;
+    cout <<"Enter the Input : ";
+    cin >> n;
+
+    int decimal = 0;
     int place = 1;
 
     while(n!=0){
-        int rem = n&1;
-        binary = rem * place + binary;
-        place = place * 10;
-        n = n >> 1;
-
+        int rem = n % 10;
+        decimal = rem * place + decimal;
+        place = place * 2;
+        n = n/10;
     }
-    cout <<binary;
+    cout<<decimal;
 }
 
 
