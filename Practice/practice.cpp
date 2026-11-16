@@ -982,26 +982,47 @@
 // }
 
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+
+//     int n;
+//     cout <<"Enter the Input : ";
+//     cin >> n;
+
+//     int decimal = 0;
+//     int place = 1;
+
+//     while(n!=0){
+//         int rem = n % 10;
+//         decimal = rem * place + decimal;
+//         place = place * 2;
+//         n = n/10;
+//     }
+//     cout<<decimal;
+// }
+
+
 #include<iostream>
+#include<climits>
 using namespace std;
 int main(){
-
     int n;
-    cout <<"Enter the Input : ";
+    cout << "Enter the Input : ";
     cin >> n;
 
-    int decimal = 0;
-    int place = 1;
-
+    int reverseNum = 0;
     while(n!=0){
-        int rem = n % 10;
-        decimal = rem * place + decimal;
-        place = place * 2;
+        int placeDigit = n % 10;
+        if((reverseNum > INT_MAX / 10) ||(reverseNum < INT_MIN / 10)){
+            return 0;
+        }
+        reverseNum = reverseNum * 10 + placeDigit;
         n = n/10;
     }
-    cout<<decimal;
-}
+    cout <<"Reverse Number is : " <<reverseNum;
 
+}
 
 
 
