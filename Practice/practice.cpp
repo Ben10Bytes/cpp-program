@@ -1046,29 +1046,52 @@
 
 // 123 to 321 - reverse number
 
+// #include<iostream>
+// #include<climits>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout <<"Enter the Input : ";
+//     cin >> n;
+
+//     int revDigit = 0;
+
+//     while(n!=0){
+//         int placeDigit = n % 10;
+
+//          if((revDigit > INT_MAX / 10)||(revDigit < INT_MIN / 10)){
+//         cout<<"The Reverse Number is : 0 ";
+//         return 0;
+//         }
+//         revDigit = revDigit * 10 + placeDigit;
+//         n = n/10;
+//     }
+
+//     cout<<"The Reverse Number is : "<<revDigit;
+
+// }
+
+
+// The integer 5 is '101' in binary & its complement is '010' which is the interger 2.
+// Input : n = 5
+// Output : 2
+
 #include<iostream>
-#include<climits>
 using namespace std;
 int main(){
     int n;
-    cout <<"Enter the Input : ";
+    cout<<"Enter the Input : ";
     cin >> n;
 
-    int revDigit = 0;
+    int mask = 0;
+    int temp = n;
 
-    while(n!=0){
-        int placeDigit = n % 10;
-
-         if((revDigit > INT_MAX / 10)||(revDigit < INT_MIN / 10)){
-        cout<<"The Reverse Number is : 0 ";
-        return 0;
-        }
-        revDigit = revDigit * 10 + placeDigit;
-        n = n/10;
+    while(temp!=0){
+        mask = (mask << 1) | 1;
+        temp = temp >> 1;
     }
-
-    cout<<"The Reverse Number is : "<<revDigit;
-
+    int ans = (~n) & mask;
+    cout <<"The complement is : "<<ans;
 }
 
 
