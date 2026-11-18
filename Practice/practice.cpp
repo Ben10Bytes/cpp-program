@@ -1003,25 +1003,41 @@
 // }
 
 
+// #include<iostream>
+// #include<climits>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout << "Enter the Input : ";
+//     cin >> n;
+
+//     int reverseNum = 0;
+//     while(n!=0){
+//         int placeDigit = n % 10;
+//         if((reverseNum > INT_MAX / 10) ||(reverseNum < INT_MIN / 10)){
+//             return 0;
+//         }
+//         reverseNum = reverseNum * 10 + placeDigit;
+//         n = n/10;
+//     }
+//     cout <<"Reverse Number is : " <<reverseNum;
+
+// }
+
+// 101 to 010
 #include<iostream>
-#include<climits>
 using namespace std;
 int main(){
     int n;
-    cout << "Enter the Input : ";
+    cout<<"Enter the Input : ";
     cin >> n;
 
-    int reverseNum = 0;
-    while(n!=0){
-        int placeDigit = n % 10;
-        if((reverseNum > INT_MAX / 10) ||(reverseNum < INT_MIN / 10)){
-            return 0;
-        }
-        reverseNum = reverseNum * 10 + placeDigit;
-        n = n/10;
-    }
-    cout <<"Reverse Number is : " <<reverseNum;
+    int temp = n;
+    int mask = 0;
 
+    while(temp!=0){
+        
+    }
 }
 
 
