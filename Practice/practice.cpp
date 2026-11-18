@@ -1025,24 +1025,51 @@
 // }
 
 // 101 to 010
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter the Input : ";
+//     cin >> n;
+
+//     int temp = n;
+//     int mask = 0;
+
+//     while(temp!=0){
+//         mask = (mask << 1) | 1;
+//         temp = temp >> 1;
+//     }
+//     int ans = (~n) & mask;
+//     cout <<"The Compliment of Input is : "<<ans;
+// }
+
+
+// 123 to 321 - reverse number
+
 #include<iostream>
+#include<climits>
 using namespace std;
 int main(){
     int n;
-    cout<<"Enter the Input : ";
+    cout <<"Enter the Input : ";
     cin >> n;
 
-    int temp = n;
-    int mask = 0;
+    int revDigit = 0;
 
-    while(temp!=0){
-        mask = (mask << 1) | 1;
-        temp = temp >> 1;
+    while(n!=0){
+        int placeDigit = n % 10;
+
+         if((revDigit > INT_MAX / 10)||(revDigit < INT_MIN / 10)){
+        cout<<"The Reverse Number is : 0 ";
+        return 0;
+        }
+        revDigit = revDigit * 10 + placeDigit;
+        n = n/10;
     }
-    int ans = (~n) & mask;
-    cout <<"The Compliment of Input is : "<<ans;
-}
 
+    cout<<"The Reverse Number is : "<<revDigit;
+
+}
 
 
 
