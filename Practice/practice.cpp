@@ -1036,8 +1036,11 @@ int main(){
     int mask = 0;
 
     while(temp!=0){
-        
+        mask = (mask << 1) | 1;
+        temp = temp >> 1;
     }
+    int ans = (~n) & mask;
+    cout <<"The Compliment of Input is : "<<ans;
 }
 
 
