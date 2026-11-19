@@ -1076,24 +1076,50 @@
 // Input : n = 5
 // Output : 2
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter the Input : ";
+//     cin >> n;
+
+//     int mask = 0;
+//     int temp = n;
+
+//     while(temp!=0){
+//         mask = (mask << 1) | 1;
+//         temp = temp >> 1;
+//     }
+//     int ans = (~n) & mask;
+//     cout <<"The complement is : "<<ans;
+// }
+
+// Given a positive integer n, find the sum of all integers in the range [1, n] inclusive that are divisible by 3, 5, or 7.
+// Example 1:
+
+// Input: n = 7
+// Output: 21
+// Explanation: Numbers in the range [1, 7] that are divisible by 3, 5, or 7 are 3, 5, 6, 7. The sum of these numbers is 21.
+
 #include<iostream>
 using namespace std;
 int main(){
     int n;
-    cout<<"Enter the Input : ";
-    cin >> n;
+    cout <<"Enter the input : ";
+    cin>>n;
 
-    int mask = 0;
-    int temp = n;
+    int sum =0;
+    int i;
 
-    while(temp!=0){
-        mask = (mask << 1) | 1;
-        temp = temp >> 1;
+    for(i = 1; i<=n; i++){
+        if(i%3==0 || i%5==0 || i%7==0){
+            sum+=i;
+        }
     }
-    int ans = (~n) & mask;
-    cout <<"The complement is : "<<ans;
-}
+    cout <<"The sum input is : "<<sum;
 
+    
+}
 
 
 
