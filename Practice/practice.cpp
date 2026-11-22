@@ -1138,27 +1138,39 @@
 // }
 
 
-#include<iostream>
-using namespace std;
-int main(){
-    char ch;
-    cout<<"Enter the Charcter : ";
-    cin>>ch;
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     char ch;
+//     cout<<"Enter the Charcter : ";
+//     cin>>ch;
 
-    if(ch>='A' && ch<='Z'){
-        cout<<"Capital letter ";
-    }
-    else if(ch>='a' && ch<='z'){
-        cout<<"Small letter";
-    }
-    else if(ch>='0' && ch<='9'){
-        cout<<"Numeric";
-    }
-    else{
-        cout<<"Special Charcter";
-    }
-    return 0;
-}
+//     if(ch>='A' && ch<='Z'){
+//         cout<<"Capital letter ";
+//     }
+//     else if(ch>='a' && ch<='z'){
+//         cout<<"Small letter";
+//     }
+//     else if(ch>='0' && ch<='9'){
+//         cout<<"Numeric";
+//     }
+//     else{
+//         cout<<"Special Charcter";
+//     }
+//     return 0;
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout <<"Enter the Input : ";
+//     cin >> n;
+
+//     for(int i = 1; i<=n; i++){
+//         cout<<i<<" ";
+//     }
+// }
 
 
 
