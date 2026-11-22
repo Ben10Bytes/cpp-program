@@ -1101,26 +1101,41 @@
 // Output: 21
 // Explanation: Numbers in the range [1, 7] that are divisible by 3, 5, or 7 are 3, 5, 6, 7. The sum of these numbers is 21.
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout <<"Enter the input : ";
+//     cin>>n;
+
+//     int sum =0;
+//     int i;
+
+//     for(i = 1; i<=n; i++){
+//         if(i%3==0 || i%5==0 || i%7==0){
+//             sum+=i;
+//         }
+//     }
+//     cout <<"The sum input is : "<<sum;
+
+    
+// }
+
 #include<iostream>
 using namespace std;
 int main(){
     int n;
-    cout <<"Enter the input : ";
-    cin>>n;
+    cout<<"Enter the Input : ";
+    cin n;
 
-    int sum =0;
-    int i;
-
-    for(i = 1; i<=n; i++){
-        if(i%3==0 || i%5==0 || i%7==0){
-            sum+=i;
-        }
+    if(n<=0){
+        return false;
     }
-    cout <<"The sum input is : "<<sum;
-
-    
+    while(n%2==0){
+        n = n/2;
+    }
+    return n == 1;
 }
-
 
 
 
