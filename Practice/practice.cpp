@@ -1121,20 +1121,43 @@
     
 // }
 
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int n;
+//     cout<<"Enter the Input : ";
+//     cin n;
+
+//     if(n<=0){
+//         return false;
+//     }
+//     while(n%2==0){
+//         n = n/2;
+//     }
+//     return n == 1;
+// }
+
+
 #include<iostream>
 using namespace std;
 int main(){
-    int n;
-    cout<<"Enter the Input : ";
-    cin n;
+    char ch;
+    cout<<"Enter the Charcter : ";
+    cin>>ch;
 
-    if(n<=0){
-        return false;
+    if(ch>='A' && ch<='Z'){
+        cout<<"Capital letter ";
     }
-    while(n%2==0){
-        n = n/2;
+    else if(ch>='a' && ch<='z'){
+        cout<<"Small letter";
     }
-    return n == 1;
+    else if(ch>='0' && ch<='9'){
+        cout<<"Numeric";
+    }
+    else{
+        cout<<"Special Charcter";
+    }
+    return 0;
 }
 
 
