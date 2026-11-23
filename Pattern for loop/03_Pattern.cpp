@@ -1,5 +1,8 @@
 
-// Sum of Natural number between 1 to N;
+// 1 2 3 4 
+// 1 2 3 4 
+// 1 2 3 4 
+// 1 2 3 4 
 
 #include<iostream>
 using namespace std;
@@ -8,9 +11,10 @@ int main(){
     cout<<"Enter the Input : ";
     cin >> n;
 
-    int sum = 0;
-    for(int i=1; i<=n; i++){
-        sum+=i;
+    for(int i = 1; i<=n; i++){
+        for(int j = 1; j<=n; j++){
+            cout<<j<<" ";
+        }
+        cout<<endl;
     }
-    cout<<sum;
 }

@@ -1,22 +1,23 @@
 
-//Sum of Odd no. b/w 1 to N;
+
+
+// 1  
+// 1  2  
+// 1  2  3  
+// 1  2  3  4
+
 
 #include<iostream>
 using namespace std;
 int main(){
     int n;
     cout<<"Enter the Input : ";
-    cin >> n;
-    int sum = 0;
+    cin>>n;
 
     for(int i = 1; i<=n; i++){
-        if(i % 2 != 0){
-            cout<<i<<" ";
-            sum+=i;
-
+        for(int j = 1; j<=i; j++){
+            cout<<j<<"  ";
         }
-        
+        cout<<endl;
     }
-    cout<<endl;
-    cout<<"Sum of odd no. is : "<<sum;
 }

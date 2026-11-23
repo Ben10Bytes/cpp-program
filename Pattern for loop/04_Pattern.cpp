@@ -1,14 +1,21 @@
 
-// Print Even no. between 1 to N;
+
+// 4 3 2 1 
+// 4 3 2 1 
+// 4 3 2 1 
+// 4 3 2 1 
 
 #include<iostream>
 using namespace std;
 int main(){
     int n;
-    cout<<"Enter the User Input : ";
-    cin >> n;
+    cout<<"Enter the Input : ";
+    cin>>n;
 
-    for(int i = 2; i<=n; i+=2){
-        cout<<i<<" ";
+    for(int i = 1; i<=n; i++){
+        for(int j = 1; j<=n; j++){
+            cout<<n-j+1<<" ";
+        }
+        cout<<endl;
     }
 }
