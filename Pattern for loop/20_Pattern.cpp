@@ -1,3 +1,11 @@
+
+
+//        *     3 space not visible
+//      * *     2 space not visible
+//    * * *     1 space not visible
+//  * * * *     0 space  , this is not traingle this is Square
+
+
 #include<iostream>
 using namespace std;
 int main(){
@@ -7,10 +15,10 @@ int main(){
 
     for(int i = 1; i<=n; i++){
         for(int j = 1; j<=n-i; j++){
-            cout<<" ";
+            cout<<"  ";
         }
         for(int j=1; j<=i; j++){
-            cout<<"* ";
+            cout<<" *";
         }
         cout<<endl;
     }
